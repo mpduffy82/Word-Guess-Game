@@ -47,7 +47,7 @@ function startGame() {
     }
     
     document.getElementById("gameover").style.cssText = "display: none";
-    document.getElementById("youwin").style.cssText = "display: none";
+    document.getElementById("youWin").style.cssText = "display: none";
     document.getElementById("playAgain").style.cssText= "display: none";
 };
 function updateDisplay() {
@@ -119,9 +119,11 @@ function checkGuess(letter) {
         }
     }
 };
+
+//checks for a win and displays the winner image and play again text
 function checkWin() {
     if(answerArray.indexOf("_") === -1) {
-        document.getElementById("youwin").style.cssText = "display: block";
+        document.getElementById("youWin").style.cssText = "display: block";
         document.getElementById("playAgain").style.cssText= "display: block";
         wins++;
         gameOver = true;
