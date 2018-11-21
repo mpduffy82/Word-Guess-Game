@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Word Guess Game</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">  
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">       
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        
+    </head> 
+<body>
+    <div class="bg-inverse text-white">
+            <div class="container">
+                <img src="assets/images/logo.jpg" class="img-fluid" alt="Responsive image">
+                    <div class="row">
+                            <div class= "col-md-6 word-guess-game">
+                                <h4>Press Any Key to Get Started!</h4>
+                                <h4>Wins</h4>
+                                <h4 id="totalWins"></h4>
+                                <h4>Current Word</h4>
+                                <h4 id="currentWord"></h4>
+                                <h4>Guesses Remaining</h4>
+                                <h4 id="guesses"></h4>
+                                <h4>Letters Already Guessed</h4>
+                                <p id="guessedLetters"></p>
+                            </div>
+                            <div class= "col-md-6 word-guess-game">
+                                <img id="youwin" src="assets/images/winner.gif" alt="Winning Image" />
+                                <img id="gameover" src="assets/images/lose.gif" alt="Game Over Image" />
+                                <h4 id="playAgain">Press Any Key to Play Again!</h4>
+                            </div>
+                    </div>
+                    <div class="row">            
+                            <div class="col-md-6 bottom-of-page">
+                            </div>
+                    </div> 
+            </div>
+    </div>
+</body> 
+<footer class="footer">
+		<div class="container">
+		<span class="text">Copyright 2018 ©</span>
+		</div>
+</footer>              
+<!-- putting this code at the bottom makes it load first time rather than loading after a the first key press (thanks w3schools!) -->
+<script src="assets/javascript/game.js"></script>
+</html>
